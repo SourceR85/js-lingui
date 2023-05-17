@@ -30,6 +30,11 @@ module.exports = {
           position: 'left',
         },
         {
+          to: '/blog',
+          label: 'Blog',
+          position: 'left',
+        },
+        {
           to: '/misc/community',
           label: 'Community',
           position: 'left',
@@ -38,7 +43,15 @@ module.exports = {
           href: 'https://github.com/lingui/js-lingui',
           position: 'right',
           className: 'header-github-link',
+          title: 'GitHub repository',
           'aria-label': 'GitHub repository',
+        },
+        {
+          href: 'https://discord.gg/gFWwAYnMtA',
+          position: 'right',
+          className: 'header-discord-link',
+          title: 'Discord',
+          'aria-label': 'Discord',
         },
       ],
     },
@@ -84,6 +97,10 @@ module.exports = {
           title: 'More',
           items: [
             {
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
               label: 'GitHub',
               href: 'https://github.com/lingui/js-lingui',
             },
@@ -106,8 +123,8 @@ module.exports = {
     },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/palenight'),
-      additionalLanguages: ['bash', 'docker', 'gettext', 'icu-message-format', 'ignore'],
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+      additionalLanguages: ['bash', 'gettext', 'icu-message-format', 'ignore'],
     },
   },
   presets: [
@@ -121,6 +138,10 @@ module.exports = {
           routeBasePath: '/',
           editUrl: 'https://github.com/lingui/js-lingui/tree/main/website',
           remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
+        },
+        blog: {
+          showReadingTime: true,
+          editUrl: 'https://github.com/lingui/js-lingui/tree/main/website/',
         },
         sitemap: {
           changefreq: 'weekly',

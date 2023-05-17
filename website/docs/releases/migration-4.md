@@ -7,6 +7,12 @@ Minimal required versions are:
 - TypeScript (if used on the project): 4.1
 - Node: v16.x
 
+:::info
+
+If you encounter any difficulties during the migration process, don't hesitate to ask for assistance on the Lingui [Discord server](https://discord.gg/gFWwAYnMtA).
+
+:::
+
 ### Extractor configuration changes
 
 The big change in v4 is in extractor internals. Now it is less fragile, and doesn't depend on the host project settings.
@@ -79,7 +85,7 @@ This also affects the `orderBy` with `messageId` as now the generated id is used
 We have made a small change in how Lingui generates ICU messages for nested JSX Macros. We have removed leading spaces from the texts in all cases.
 
 The generated code from the following nested component:
-``` jsx
+```jsx
 <Plural
   id="message.id"
   one={
@@ -97,7 +103,7 @@ The generated code from the following nested component:
 ```
 
 was changed as follows:
-``` diff
+```diff
   <Trans
     id="message.id"
     message={

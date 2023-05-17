@@ -2,7 +2,7 @@
 title: Internationalization in Javascript
 ---
 
-📖 A readable, automated, and optimized (5 kb) internationalization for JavaScript
+📖 A readable, automated, and optimized (3 kb) internationalization for JavaScript
 
 > **Internationalization** is the design and development of a product, application or document content that enables easy **localization** for target audiences that vary in culture, region, or language.
 >
@@ -36,7 +36,7 @@ Integrate Lingui into your existing workflow. It supports message keys as well a
 
 ### Lightweight and optimized
 
-Core library is only [1.7 kB gzipped](https://bundlephobia.com/result?p=@lingui/core), React components are additional [1.6 kB gzipped](https://bundlephobia.com/result?p=@lingui/react). That's less than Redux for a full-featured intl library.
+Core library is only [1.5 kB gzipped](https://bundlephobia.com/result?p=@lingui/core), React components are additional [1.3 kB gzipped](https://bundlephobia.com/result?p=@lingui/react). That's less than Redux for a full-featured intl library.
 
 ### Active community
 
@@ -44,7 +44,7 @@ Join us on [GitHub Discussions](https://github.com/lingui/js-lingui/discussions)
 
 ### Compatible with react-intl
 
-Low-level React API is very similar to react-intl and the message format is the same. It's easy to migrate existing project.
+Low-level React API is very similar to react-intl and the message format is the same. It's easy to migrate an existing project.
 
 ## Quick overview
 

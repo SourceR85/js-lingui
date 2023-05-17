@@ -10,9 +10,16 @@ export type TransRenderProps = {
   message?: string | null
   isTranslated: boolean
 }
-type MaximumOneOf<T, K extends keyof T = keyof T> = K extends keyof T
-  ? { [P in K]?: T[K] } & Partial<Record<Exclude<keyof T, K>, never>>
-  : never
+
+export type TransRenderCallbackOrComponent =
+  | {
+      component?: undefined
+      render?: (props: TransRenderProps) => React.ReactElement<any, any> | null
+    }
+  | {
+      component?: React.ComponentType<TransRenderProps> | null
+      render?: undefined
+    }
 
 export type TransProps = {
   id: string
@@ -21,17 +28,14 @@ export type TransProps = {
   components?: { [key: string]: React.ElementType | any }
   formats?: Record<string, unknown>
   children?: React.ReactNode
-} & MaximumOneOf<{
-  component?: React.ComponentType<TransRenderProps>
-  render?: (props: TransRenderProps) => React.ReactElement<any, any> | null
-}>
+} & TransRenderCallbackOrComponent
 
 export function Trans(props: TransProps): React.ReactElement<any, any> | null {
   const { i18n, defaultComponent } = useLingui()
   const { render, component, id, message, formats } = props
 
-  const values = { ...(props.values || {}) }
-  const components = { ...(props.components || {}) }
+  const values = { ...props.values }
+  const components = { ...props.components }
 
   if (values) {
     /*
@@ -112,11 +116,10 @@ export function Trans(props: TransProps): React.ReactElement<any, any> | null {
   }
 
   // `component` prop has a higher precedence over `defaultComponent`
-  const Component = component || FallbackComponent
+  const Component: React.ComponentType<TransRenderProps> =
+    component || FallbackComponent
 
-  const RenderedComponent =
-    defaultComponent && !component ? defaultComponent : Component
-  return React.createElement(RenderedComponent, i18nProps, translation)
+  return React.createElement(Component, i18nProps, translation)
 }
 
 const RenderFragment = ({ children }: TransRenderProps) => {
