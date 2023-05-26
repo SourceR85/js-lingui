@@ -611,28 +611,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lingui/babel-plugin-extract-messages@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/babel-plugin-extract-messages@npm:4.0.0-next.3"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-  checksum: 10e0e83d979665a7c49cb1b8633cf3ca16f15426c1f415818ac44f4339204a56f3f9d0a6994d39ed3edfebcbcbeecec9804de34c2c347d8e4e570b077156d891
+"@lingui/babel-plugin-extract-messages@npm:4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/babel-plugin-extract-messages@npm:4.1.2"
+  checksum: 61cae1343e55073ae4cd7bbaf3e77362e71799af4be4e6cfc759e4d33eef6bca0f6a312bb43654ebc0abf8717e2c77c2b421420c47dfa2f0c3cc0f96dcf67015
   languageName: node
   linkType: hard
 
-"@lingui/cli@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/cli@npm:4.0.0-next.3"
+"@lingui/cli@npm:4.1.2, @lingui/cli@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/cli@npm:4.1.2"
   dependencies:
     "@babel/core": ^7.21.0
     "@babel/generator": ^7.21.1
     "@babel/parser": ^7.21.2
     "@babel/runtime": ^7.21.0
     "@babel/types": ^7.21.2
-    "@lingui/babel-plugin-extract-messages": ^4.0.0-next.3
-    "@lingui/conf": ^4.0.0-next.3
-    "@lingui/core": ^4.0.0-next.3
-    "@lingui/format-po": ^4.0.0-next.3
+    "@lingui/babel-plugin-extract-messages": 4.1.2
+    "@lingui/conf": 4.1.2
+    "@lingui/core": 4.1.2
+    "@lingui/format-po": 4.1.2
+    "@lingui/message-utils": 4.1.2
     babel-plugin-macros: ^3.0.1
     chalk: ^4.1.0
     chokidar: 3.5.1
@@ -646,20 +645,21 @@ __metadata:
     micromatch: 4.0.2
     normalize-path: ^3.0.0
     ora: ^5.1.0
+    pathe: ^1.1.0
     pkg-up: ^3.1.0
     pofile: ^1.1.4
-    pseudolocale: ^1.1.0
+    pseudolocale: ^2.0.0
     ramda: ^0.27.1
     source-map: ^0.8.0-beta.0
   bin:
-    lingui: build/lingui.js
-  checksum: 9bc2fcb4912d25e0e3ad2d9aa5613f79879ffc811046de9497ec26c9e053d3f7d037b0de18b43f24089f570e7495fe73f7beaa97d8efcba3622cc90be0737c44
+    lingui: dist/lingui.js
+  checksum: 3dd985af16702f2e6fc91c6e263fbfe93cbbdcaea01e54dd5a710a583fa40a48b070f4efdd872eb6518b960d431910b9e8a07cea2000a44e634285e953fdd7c6
   languageName: node
   linkType: hard
 
-"@lingui/conf@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/conf@npm:4.0.0-next.3"
+"@lingui/conf@npm:4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/conf@npm:4.1.2"
   dependencies:
     "@babel/runtime": ^7.20.13
     chalk: ^4.1.0
@@ -667,90 +667,88 @@ __metadata:
     jest-validate: ^29.4.3
     jiti: ^1.17.1
     lodash.get: ^4.4.2
-  checksum: 94076637a036b19933a328bc43e4784bbbef754bc0edf0b241db760cfad94db3d58a68a901671778bff8c9fe0dfa7973a77721a4f49cbb381c8855e8dcd8bc48
+  checksum: 2fbeeaf0c2e7b895c3128b7e5e7e72a43d21bfd2b8f5bff6d0ec46ee8ae22d1c9af54540d7d070a21639b652ff1b9482b33504db79787801d0db693763508fe0
   languageName: node
   linkType: hard
 
-"@lingui/core@npm:^3.17.2":
-  version: 3.17.2
-  resolution: "@lingui/core@npm:3.17.2"
+"@lingui/core@npm:4.1.2, @lingui/core@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/core@npm:4.1.2"
   dependencies:
     "@babel/runtime": ^7.20.13
-    "@messageformat/parser": ^5.0.0
-    make-plural: ^6.2.2
-  checksum: 92689ccc4e03c18be4d875faef4b6b22dca590e744dfa1b004bfb02f946e87d6fb3747fd4d421f49cb847e818c145a2c9c75cf1af569fd48bb7512b8a7749d6d
+    "@lingui/message-utils": 4.1.2
+  checksum: 480d13a13b855944d36d4145934fb18a0e8cb0625004114c540b9a7e5dce83206944a91d8daa55395ea3b11958bedaeb1731fd3e4224f7817f47fb1825450e6f
   languageName: node
   linkType: hard
 
-"@lingui/core@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/core@npm:4.0.0-next.3"
+"@lingui/format-po@npm:4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/format-po@npm:4.1.2"
   dependencies:
-    "@babel/runtime": ^7.20.13
-    "@messageformat/parser": ^5.0.0
-  checksum: 2509b4bbe2186f39f3db882bd8ca4fad9333c1f080ff8d17bf4e1c4a0a4eee3ed0f8154034423787bfab4037903950eb43b4d8d84ea10e60bfd89cf859a5195b
-  languageName: node
-  linkType: hard
-
-"@lingui/format-po@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/format-po@npm:4.0.0-next.3"
-  dependencies:
-    "@lingui/cli": ^4.0.0-next.3
-    "@lingui/conf": ^4.0.0-next.3
+    "@lingui/conf": 4.1.2
+    "@lingui/message-utils": 4.1.2
     date-fns: ^2.29.3
     pofile: ^1.1.4
-  checksum: 68705cfc16779009dae4cb0cb7373290dbe4a28bbf0627172045c11af57f2845a6e0313c0a9e64e98afe4e8488941b7b02cf7021d606b24df53103b292c41507
+  checksum: 205afaea64d59c70d876610d4480195c20a5649bc64a7618b69ba6adf702886de723517b0526129e0fccca01a4d2185c02746d7d77fc47cfc4e01cc65ee540ad
   languageName: node
   linkType: hard
 
-"@lingui/loader@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/loader@npm:4.0.0-next.3"
+"@lingui/loader@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/loader@npm:4.1.2"
   dependencies:
     "@babel/runtime": ^7.20.13
-    "@lingui/cli": ^4.0.0-next.3
-    "@lingui/conf": ^4.0.0-next.3
+    "@lingui/cli": 4.1.2
+    "@lingui/conf": 4.1.2
   peerDependencies:
     webpack: ^5.0.0
-  checksum: f2e64c561409c9c92fddb357248caee7a944b9940549f9d8c5cb1e58a77b2fe5f7d38ab1521ca8b5b603b0ca7d9587f17790a21883343518755c502de100c7e4
+  checksum: 7c2d00a0de024a4f5dab3651c3d7e15b03e92e5b91c1070cbc8975f3c9c2dcb5647f460ec7b88e151e73714229549a1ac87e842ebf40e1924b5c0dace3a89767
   languageName: node
   linkType: hard
 
-"@lingui/macro@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/macro@npm:4.0.0-next.3"
+"@lingui/macro@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/macro@npm:4.1.2"
   dependencies:
     "@babel/runtime": ^7.20.13
     "@babel/types": ^7.20.7
-    "@lingui/cli": ^4.0.0-next.3
-    "@lingui/conf": ^4.0.0-next.3
+    "@lingui/conf": 4.1.2
+    "@lingui/core": 4.1.2
+    "@lingui/message-utils": 4.1.2
   peerDependencies:
-    "@lingui/core": 4.0.0-next.3
-    "@lingui/react": 4.0.0-next.3
+    "@lingui/react": ^4.0.0
     babel-plugin-macros: 2 || 3
-  checksum: f7561330fb8f8599eb43bcb0ceef03bd2b23d34a627db2c6fe5a9ca480a42448d7609866171f52e12a4da70faa947cb80d85f8696a1d8f375b4113db69cb96f6
+  checksum: bfe69b093a0724f54fc5bccee42787c0ef8f98479524226d5a34c4d5129878138e74be429e423da99633e02da6aa82026ad39dfe01ea8334bab4a39fdf282a89
   languageName: node
   linkType: hard
 
-"@lingui/react@npm:^4.0.0-next.3":
-  version: 4.0.0-next.3
-  resolution: "@lingui/react@npm:4.0.0-next.3"
+"@lingui/message-utils@npm:4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/message-utils@npm:4.1.2"
+  dependencies:
+    "@messageformat/parser": ^5.0.0
+  checksum: a0a78959f22b866a298da342931a3eee474cdd486b9bdedf50ecdb7caa479dac773bc21b10a2d39c1d4363d5b7a236ccd853d9e4f46bcf0c1741becc7c078382
+  languageName: node
+  linkType: hard
+
+"@lingui/react@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@lingui/react@npm:4.1.2"
   dependencies:
     "@babel/runtime": ^7.20.13
-    "@lingui/core": ^4.0.0-next.3
+    "@lingui/core": 4.1.2
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 91b666288118c81fa556e3db41c0bbf804ef2907a420c3388bfdeaaf0bfce8fad831d721fa235de81cca1d9c38faff5097ab44fcf5671db6495101e693b80050
+  checksum: 887a4341c1afa45abab4bf9e753c74329a2bb3e5a6d941968c91c2540e7506e54c00def50f75744e6c704a38772ccaaff04f1e622f114e0ba542136ad4f6227e
   languageName: node
   linkType: hard
 
-"@lingui/swc-plugin@npm:^4.0.0-next.2":
-  version: 4.0.0-next.2
-  resolution: "@lingui/swc-plugin@npm:4.0.0-next.2"
+"@lingui/swc-plugin@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@lingui/swc-plugin@npm:4.0.0"
   peerDependencies:
     "@lingui/macro": 4
-  checksum: 3313fcc3bbee3fe3277b7d0101dde2bfff36240576db005ae46fa189f7a43381139a4f9e303bb3eae2a58542e06220e673c13c113b40f3539df3239215118a8a
+  checksum: 50b104db7f77659d94d954466b0161cc06bc694e89b5a8315106324f886a18b1fc02c58e054c2e26ed51861ed82bea5889b31f671a60be28b31794975dca2d72
   languageName: node
   linkType: hard
 
@@ -763,10 +761,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/env@npm:13.2.3"
-  checksum: e3d59b888c0e57ead895ec0c96ce92b6929684a1af8b3435e0142d21e6af21b1193f421f9d6b9b36ce7711a0379fb85033e25670fef3ba9c923cc77752be6c10
+"@next/env@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/env@npm:13.3.1"
+  checksum: 3bf01e62b7de1de9de0cf7a5904364a2e807ad4f0a6cabfbb288225696a0750163bee23669bd45bfbec17dcf1fe66512212bdfa5be0a341ad187270a3cc27943
   languageName: node
   linkType: hard
 
@@ -779,93 +777,65 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/swc-android-arm-eabi@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-android-arm-eabi@npm:13.2.3"
-  conditions: os=android & cpu=arm
-  languageName: node
-  linkType: hard
-
-"@next/swc-android-arm64@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-android-arm64@npm:13.2.3"
-  conditions: os=android & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@next/swc-darwin-arm64@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-darwin-arm64@npm:13.2.3"
+"@next/swc-darwin-arm64@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-darwin-arm64@npm:13.3.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-darwin-x64@npm:13.2.3"
+"@next/swc-darwin-x64@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-darwin-x64@npm:13.3.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-freebsd-x64@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-freebsd-x64@npm:13.2.3"
-  conditions: os=freebsd & cpu=x64
-  languageName: node
-  linkType: hard
-
-"@next/swc-linux-arm-gnueabihf@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-linux-arm-gnueabihf@npm:13.2.3"
-  conditions: os=linux & cpu=arm
-  languageName: node
-  linkType: hard
-
-"@next/swc-linux-arm64-gnu@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-linux-arm64-gnu@npm:13.2.3"
+"@next/swc-linux-arm64-gnu@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-linux-arm64-gnu@npm:13.3.1"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-linux-arm64-musl@npm:13.2.3"
+"@next/swc-linux-arm64-musl@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-linux-arm64-musl@npm:13.3.1"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-linux-x64-gnu@npm:13.2.3"
+"@next/swc-linux-x64-gnu@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-linux-x64-gnu@npm:13.3.1"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-linux-x64-musl@npm:13.2.3"
+"@next/swc-linux-x64-musl@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-linux-x64-musl@npm:13.3.1"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-win32-arm64-msvc@npm:13.2.3"
+"@next/swc-win32-arm64-msvc@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-win32-arm64-msvc@npm:13.3.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-ia32-msvc@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-win32-ia32-msvc@npm:13.2.3"
+"@next/swc-win32-ia32-msvc@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-win32-ia32-msvc@npm:13.3.1"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:13.2.3":
-  version: 13.2.3
-  resolution: "@next/swc-win32-x64-msvc@npm:13.2.3"
+"@next/swc-win32-x64-msvc@npm:13.3.1":
+  version: 13.3.1
+  resolution: "@next/swc-win32-x64-msvc@npm:13.3.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -931,12 +901,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/helpers@npm:0.4.14":
-  version: 0.4.14
-  resolution: "@swc/helpers@npm:0.4.14"
+"@swc/helpers@npm:0.5.0":
+  version: 0.5.0
+  resolution: "@swc/helpers@npm:0.5.0"
   dependencies:
     tslib: ^2.4.0
-  checksum: 273fd3f3fc461a92f3790cc551ea054745c6d6959afbe1232e6d7aa1c722bbc114d308aab96bef5c78fc0303c85c7b472ef00e2253251cc89737f3b1af56e5a5
+  checksum: 61c9c7dddb707deb58b85328cfe9d211887145f1311ae6a6e6c0fa9f781fb29916a8669a7d479e46e26a32a89d6ef4f293a22dee4925e009c84051e9dd10e8b7
   languageName: node
   linkType: hard
 
@@ -1440,6 +1410,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"busboy@npm:1.6.0":
+  version: 1.6.0
+  resolution: "busboy@npm:1.6.0"
+  dependencies:
+    streamsearch: ^1.1.0
+  checksum: 32801e2c0164e12106bf236291a00795c3c4e4b709ae02132883fe8478ba2ae23743b11c5735a0aae8afe65ac4b6ca4568b91f0d9fed1fdbc32ede824a73746e
+  languageName: node
+  linkType: hard
+
 "cacache@npm:^16.1.0":
   version: 16.1.3
   resolution: "cacache@npm:16.1.3"
@@ -1649,13 +1628,6 @@ __metadata:
   version: 1.0.3
   resolution: "colors@npm:1.0.3"
   checksum: 234e8d3ab7e4003851cdd6a1f02eaa16dabc502ee5f4dc576ad7959c64b7477b15bd21177bab4055a4c0a66aa3d919753958030445f87c39a253d73b7a3637f5
-  languageName: node
-  linkType: hard
-
-"commander@npm:*":
-  version: 7.2.0
-  resolution: "commander@npm:7.2.0"
-  checksum: 53501cbeee61d5157546c0bef0fedb6cdfc763a882136284bed9a07225f09a14b82d2a84e7637edfd1a679fb35ed9502fd58ef1d091e6287f60d790147f68ddc
   languageName: node
   linkType: hard
 
@@ -3547,13 +3519,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-plural@npm:^6.2.2":
-  version: 6.2.2
-  resolution: "make-plural@npm:6.2.2"
-  checksum: 3358330c113e4586f8874a37f3ad613cd7c898ff9a0ae61d029dfbdce042ad0f76e88909464c5514be81166b842005913e58341e77f7b6378a2020630dcfc613
-  languageName: node
-  linkType: hard
-
 "merge2@npm:^1.3.0":
   version: 1.4.1
   resolution: "merge2@npm:1.4.1"
@@ -3773,47 +3738,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:13.2.3":
-  version: 13.2.3
-  resolution: "next@npm:13.2.3"
+"next@npm:13.3.1":
+  version: 13.3.1
+  resolution: "next@npm:13.3.1"
   dependencies:
-    "@next/env": 13.2.3
-    "@next/swc-android-arm-eabi": 13.2.3
-    "@next/swc-android-arm64": 13.2.3
-    "@next/swc-darwin-arm64": 13.2.3
-    "@next/swc-darwin-x64": 13.2.3
-    "@next/swc-freebsd-x64": 13.2.3
-    "@next/swc-linux-arm-gnueabihf": 13.2.3
-    "@next/swc-linux-arm64-gnu": 13.2.3
-    "@next/swc-linux-arm64-musl": 13.2.3
-    "@next/swc-linux-x64-gnu": 13.2.3
-    "@next/swc-linux-x64-musl": 13.2.3
-    "@next/swc-win32-arm64-msvc": 13.2.3
-    "@next/swc-win32-ia32-msvc": 13.2.3
-    "@next/swc-win32-x64-msvc": 13.2.3
-    "@swc/helpers": 0.4.14
+    "@next/env": 13.3.1
+    "@next/swc-darwin-arm64": 13.3.1
+    "@next/swc-darwin-x64": 13.3.1
+    "@next/swc-linux-arm64-gnu": 13.3.1
+    "@next/swc-linux-arm64-musl": 13.3.1
+    "@next/swc-linux-x64-gnu": 13.3.1
+    "@next/swc-linux-x64-musl": 13.3.1
+    "@next/swc-win32-arm64-msvc": 13.3.1
+    "@next/swc-win32-ia32-msvc": 13.3.1
+    "@next/swc-win32-x64-msvc": 13.3.1
+    "@swc/helpers": 0.5.0
+    busboy: 1.6.0
     caniuse-lite: ^1.0.30001406
     postcss: 8.4.14
     styled-jsx: 5.1.1
   peerDependencies:
-    "@opentelemetry/api": ^1.4.0
+    "@opentelemetry/api": ^1.1.0
     fibers: ">= 3.1.0"
     node-sass: ^6.0.0 || ^7.0.0
     react: ^18.2.0
     react-dom: ^18.2.0
     sass: ^1.3.0
   dependenciesMeta:
-    "@next/swc-android-arm-eabi":
-      optional: true
-    "@next/swc-android-arm64":
-      optional: true
     "@next/swc-darwin-arm64":
       optional: true
     "@next/swc-darwin-x64":
-      optional: true
-    "@next/swc-freebsd-x64":
-      optional: true
-    "@next/swc-linux-arm-gnueabihf":
       optional: true
     "@next/swc-linux-arm64-gnu":
       optional: true
@@ -3840,7 +3794,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 5147078cebf6156acd1dc54208b02852d23c50fe9fae9de444d9982090b63ac1975284d6e8d1647b78c98508c6d4be90a2debc3a12e383db423188724d38e6a9
+  checksum: a685abbcfe028940f8e3c86f6712fadcba1ca92c68b4dddfd1192d93a4ebac2d0947cd62d8cecf530afbd8163b2ef6dfe338b1fe7b699d78bc7123624a7622db
   languageName: node
   linkType: hard
 
@@ -3848,16 +3802,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-swc-example@workspace:."
   dependencies:
-    "@lingui/cli": ^4.0.0-next.3
-    "@lingui/core": ^3.17.2
-    "@lingui/loader": ^4.0.0-next.3
-    "@lingui/macro": ^4.0.0-next.3
-    "@lingui/react": ^4.0.0-next.3
-    "@lingui/swc-plugin": ^4.0.0-next.2
+    "@lingui/cli": ^4.1.2
+    "@lingui/core": ^4.1.2
+    "@lingui/loader": ^4.1.2
+    "@lingui/macro": ^4.1.2
+    "@lingui/react": ^4.1.2
+    "@lingui/swc-plugin": ^4.0.0
     "@types/react": ^18.0.14
     eslint: 8.35.0
     eslint-config-next: 12.3.4
-    next: 13.2.3
+    next: 13.3.1
     react: 18.2.0
     react-dom: 18.2.0
     typescript: ^4.7.4
@@ -4219,6 +4173,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pathe@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "pathe@npm:1.1.0"
+  checksum: 6b9be9968ea08a90c0824934799707a1c6a1ad22ac1f22080f377e3f75856d5e53a331b01d327329bfce538a14590587cfb250e8e7947f64408797c84c252056
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -4306,12 +4267,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pseudolocale@npm:^1.1.0":
-  version: 1.2.0
-  resolution: "pseudolocale@npm:1.2.0"
+"pseudolocale@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "pseudolocale@npm:2.0.0"
   dependencies:
-    commander: "*"
-  checksum: c504de65478454e0a64248df62422889893a4609f52d37452ecb3d0abf2a122163cbeb883709a6f23574f21cfe0fadcb06107f0834d079bf806521880e4b91fc
+    commander: ^10.0.0
+  bin:
+    pseudolocale: dist/cli.mjs
+  checksum: 971f79536becac26b4224ecfee6485a48143073820bb22f6a0a590867cf9d794955fd9d4bf13cf7f28b577dc82d41c976e7512cde2d57eb587522f152332165b
   languageName: node
   linkType: hard
 
@@ -4726,6 +4689,13 @@ __metadata:
   dependencies:
     minipass: ^3.1.1
   checksum: fb58f5e46b6923ae67b87ad5ef1c5ab6d427a17db0bead84570c2df3cd50b4ceb880ebdba2d60726588272890bae842a744e1ecce5bd2a2a582fccd5068309eb
+  languageName: node
+  linkType: hard
+
+"streamsearch@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "streamsearch@npm:1.1.0"
+  checksum: 1cce16cea8405d7a233d32ca5e00a00169cc0e19fbc02aa839959985f267335d435c07f96e5e0edd0eadc6d39c98d5435fb5bbbdefc62c41834eadc5622ad942
   languageName: node
   linkType: hard
 
